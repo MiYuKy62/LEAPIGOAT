@@ -106,6 +106,32 @@
                     }
                 }
             }
+        },
+        "delete": {
+            "summary": "Supprimer une musique par ID",
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "description": "ID de la musique à supprimer",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "Succès",
+                    "content": {
+                        "application/json": {
+                            "example": {
+                                "message": "Suppression effectuée."
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
